@@ -1,0 +1,25 @@
+h1{
+    position: relative;
+}
+h1::before{
+    content:"-:THANK YOU FOR VISITING:-";
+    width: 100%;
+    color: #2ae820;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: .4rem solid;
+    animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
